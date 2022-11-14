@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+  </script>
+
+
+  <link rel="shortcut icon" href="calculator.svg" type="image/x-icon">
+  <title>Risk Table</title>
+</head>
+
+<body>
+
+  <!-- <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Logo</a>
+    </div>
+  </nav> -->
+
+  <div class="container">
+
+
+    <div class="wrapper">
+
+      <div class="py-1">
+        <h1>Hulubalang Risk Table</h1>
+      </div>
+
+
+      <!-- Input Form -->
+
+
+
+
+      <div class="py-4">
+        <form id="risk-input">
+
+          <div class="row">
+            <div class="col"><input type="text" name="capital" id="capital" placeholder="Capital in $"
+                class="form-control"></div>
+            <div class="col">
+              <input type="text" name="risk" id="risk" placeholder="Risk %" class="form-control">
+            </div>
+            <div class="col"> <button type="submit" class="btn btn-danger active">Calculate</button></div>
+          </div>
+
+        </form>
+      </div>
+
+
+
+
+
+
+      <!-- Out Put Table -->
+
+
+      <div class="risk-table">
+
+        <table class="table table-bordered table-sm">
+
+
+          <thead class="table-light">
+            <tr>
+              <th>Capital :</th>
+              <td>$ <span id="capitalOutput"></span></td>
+              <th>Risk :</th>
+              <td><span id="riskOutput"></span> %</td>
+            </tr>
+          </thead>
+          <tr>
+            <th colspan="2" class="header">Pips</th>
+            <th colspan="2" class="header">Lot</th>
+          </tr>
+          <tr>
+            <th colspan="2">5 Pips</th>
+            <td colspan="2" id="pip5"></td>
+          </tr>
+          <tr>
+            <th colspan="2">10 Pips</th>
+            <td colspan="2" id="pip10"></td>
+          </tr>
+          <tr>
+            <th colspan="2">15 Pips</th>
+            <td colspan="2" id="pip15"></td>
+          </tr>
+          <tr>
+            <th colspan="2">20 Pips</th>
+            <td colspan="2" id="pip20"></td>
+          </tr>
+          <tr>
+            <th colspan="2">25 Pips</th>
+            <td colspan="2" id="pip25"></td>
+          </tr>
+          <tr>
+            <th colspan="2">30 Pips</th>
+            <td colspan="2" id="pip30"></td>
+          </tr>
+          <tr>
+            <th colspan="2">35 Pips</th>
+            <td colspan="2" id="pip35"></td>
+          </tr>
+          <tr>
+            <th colspan="2">40 Pips</th>
+            <td colspan="2" id="pip40"></td>
+          </tr>
+          <tr>
+            <th colspan="2">45 Pips</th>
+            <td colspan="2" id="pip45"></td>
+          </tr>
+          <tr>
+            <th colspan="2">50 Pips</th>
+            <td colspan="2" id="pip50"></td>
+          </tr>
+
+
+        </table>
+
+
+
+      </div>
+    </div>
+
+
+
+
+
+
+  </div>
+
+  </div>
+
+
+
+
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
